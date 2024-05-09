@@ -1,0 +1,58 @@
+.parallax-container {
+    position: relative;
+    overflow: hidden;
+    height: 105vh; 
+}
+
+.parallax-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+   
+}
+
+
+
+@media (max-width: 1300px) {
+    .parallax-container {
+        height: 70vh;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .parallax-container {
+        height: 60vh;
+    }
+
+}
+@media (max-width: 900px) {
+    .parallax-container {
+        height: 50vh;
+        
+    }
+
+}
+@media (max-width: 720px) {
+    .parallax-container {
+        height: 40vh;
+        
+    }
+
+}
+@media (max-width: 600px) {
+    .parallax-container {
+        height: 30vh;
+        
+    }
+
+}
+@media (max-width: 420px) {
+    .parallax-container {
+        height: 30vh;
+        
+    }
+
+}

@@ -1,0 +1,47 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.container {
+  
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(0, 56, 14);
+  font-size: 40pt;
+  margin: 40px;
+  
+  
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(200px, auto);
+  grid-gap: 10px;
+}
+.grid-item {
+  text-align: center;
+  margin: 10px; 
+  
+}
+.grid-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.btn{
+  margin: 60px !important;
+  text-align: center !important;
+}
+
+@media screen and (max-width: 768px) {
+  .grid-container {
+      grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .grid-container {
+      grid-template-columns: repeat(1, 1fr); 
+  }
+}

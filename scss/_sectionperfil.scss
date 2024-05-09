@@ -1,0 +1,83 @@
+.grid-containersect {
+    display: grid;
+    grid-template-columns: 1fr;
+   
+    background-color: #8a2be2;
+    color: #fff; 
+}
+
+
+.descripcion h2 {
+    margin: 60px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 30pt;
+  font-weight: 600;
+
+}
+
+.imagensect img {
+    max-width: 150%;
+    padding: 20px;
+    height: auto; 
+}
+.descripcion p{
+margin-left: 50px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 11pt;
+
+}
+
+
+@media only screen and (min-width: 40em) {
+    .grid-containersect {
+        grid-template-columns: 1fr 1fr;
+        padding: 50px;
+
+    }
+    .descripcion h2 {
+    
+      font-size: 60pt;
+    
+    }
+    .descripcion p{
+      margin-left: 50px;
+          font-size: 15pt;}
+          .imagensect img{
+            margin: 0px;
+            max-width: 100%;
+            margin-left: 50px;
+            padding: 0px;
+          }
+          
+          @media (max-width: 480px) {
+             .grid-containersect {
+        grid-template-columns: 1fr 1fr;
+        padding: 50px;
+
+    }
+            .imagensect img {
+              margin: 0px;
+              max-width: 70%;
+              align-items: left;
+          
+            }
+          }
+
+}
+@media screen and (min-width: 1200px) {
+    .grid-containersect {
+        grid-template-columns: 1fr 1fr;
+    }
+    .descripcion h2 {
+    
+      font-size: 60pt;
+    
+    }
+    .descripcion p{
+       
+          font-size: 15pt;}
+
+
+}

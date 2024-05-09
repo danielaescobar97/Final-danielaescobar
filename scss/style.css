@@ -1,0 +1,471 @@
+.parallax-container {
+  position: relative;
+  overflow: hidden;
+  height: 105vh;
+}
+
+.parallax-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+@media (max-width: 1300px) {
+  .parallax-container {
+    height: 70vh;
+  }
+}
+@media (max-width: 1000px) {
+  .parallax-container {
+    height: 60vh;
+  }
+}
+@media (max-width: 900px) {
+  .parallax-container {
+    height: 50vh;
+  }
+}
+@media (max-width: 720px) {
+  .parallax-container {
+    height: 40vh;
+  }
+}
+@media (max-width: 600px) {
+  .parallax-container {
+    height: 30vh;
+  }
+}
+@media (max-width: 420px) {
+  .parallax-container {
+    height: 30vh;
+  }
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.container {
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(0, 56, 14);
+  font-size: 40pt;
+  margin: 40px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(200px, auto);
+  grid-gap: 10px;
+}
+
+.grid-item {
+  text-align: center;
+  margin: 10px;
+}
+
+.grid-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.btn {
+  margin: 60px !important;
+  text-align: center !important;
+}
+
+@media screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.containerport {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-pic {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.profile-description {
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+}
+.containercont {
+  max-width: 800px;
+  margin: 50px auto 250px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+}
+
+.contact-info {
+  flex: 1;
+  max-width: 40%;
+}
+
+.contact-form {
+  flex: 1;
+  padding: 20px;
+  max-width: 60%;
+}
+
+h1 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button[type=submit] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type=submit]:hover {
+  background-color: #0056b3;
+}
+
+.contact-info img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px 0 0 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .containercont {
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .contact-info,
+  .contact-form {
+    max-width: 100%;
+  }
+  .contact-info img {
+    border-radius: 10px 10px 0 0;
+  }
+}
+.grid-containersect {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #8a2be2;
+  color: #fff;
+}
+
+.descripcion h2 {
+  margin: 60px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 30pt;
+  font-weight: 600;
+}
+
+.imagensect img {
+  max-width: 150%;
+  padding: 20px;
+  height: auto;
+}
+
+.descripcion p {
+  margin-left: 50px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 11pt;
+}
+
+@media only screen and (min-width: 40em) {
+  .grid-containersect {
+    grid-template-columns: 1fr 1fr;
+    padding: 50px;
+  }
+  .descripcion h2 {
+    font-size: 60pt;
+  }
+  .descripcion p {
+    margin-left: 50px;
+    font-size: 15pt;
+  }
+  .imagensect img {
+    margin: 0px;
+    max-width: 100%;
+    margin-left: 50px;
+    padding: 0px;
+  }
+}
+@media only screen and (min-width: 40em) and (max-width: 480px) {
+  .grid-containersect {
+    grid-template-columns: 1fr 1fr;
+    padding: 50px;
+  }
+  .imagensect img {
+    margin: 0px;
+    max-width: 70%;
+    align-items: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .grid-containersect {
+    grid-template-columns: 1fr 1fr;
+  }
+  .descripcion h2 {
+    font-size: 60pt;
+  }
+  .descripcion p {
+    font-size: 15pt;
+  }
+}
+footer {
+  margin-top: 50px;
+  background-color: #fade83;
+  color: #000000;
+  padding: 20px;
+  text-align: center;
+}
+
+.social-icons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.social-icon {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  vertical-align: middle;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  .social-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+.containerbento {
+  max-width: 1920px;
+  margin: 100px;
+}
+
+.bento-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.bento-item {
+  width: calc(33.33% - 20px);
+  margin-bottom: 30px;
+}
+
+.bento-item img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.bento-item img:hover {
+  transform: scale(1.1);
+}
+
+.portafolio {
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(24, 61, 24);
+  font-weight: bolder;
+  font-size: 50pt;
+}
+
+@media (max-width: 1200px) {
+  .bento-item {
+    width: calc(60% - 20px);
+  }
+}
+@media (max-width: 768px) {
+  .bento-item {
+    width: calc(50% - 20px);
+  }
+  .portafolio {
+    font-size: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .bento-item {
+    width: calc(100% - 20px);
+  }
+}
+@media (max-width: 480px) {
+  .bento-item {
+    width: calc(100% - 20px);
+  }
+}
+.containerport {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-pic {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.descriptionmaya {
+  text-align: center;
+  margin: 20px 500px 250px 500px;
+}
+
+@media screen and (max-width: 1600px) {
+  .container {
+    padding: 10px;
+  }
+  .descriptionmaya {
+    margin: 20px 300px 100px 300px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 10px;
+  }
+  .descriptionmaya {
+    margin: 20px 200px 50px 200px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .container {
+    padding: 10px;
+  }
+  .descriptionmaya {
+    margin: 20px 100px 50px 100px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+  .descriptionmaya {
+    margin: 20px 50px 50px 50px;
+  }
+}
+.containerport {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-pic {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.descriptionmaya {
+  text-align: center;
+  margin: 20px 500px 250px 500px;
+}
+
+@media screen and (max-width: 1600px) {
+  .container {
+    padding: 10px;
+  }
+  .descriptionmaya {
+    margin: 20px 300px 100px 300px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 10px;
+  }
+  .descriptionmaya {
+    margin: 20px 200px 50px 200px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .container {
+    padding: 10px;
+  }
+  .descriptionmaya {
+    margin: 20px 100px 50px 100px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+  .descriptionmaya {
+    margin: 20px 50px 50px 50px;
+  }
+}
+.logo {
+  height: 50px;
+  border: 10px;
+}/*# sourceMappingURL=style.css.map */
